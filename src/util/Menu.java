@@ -1,8 +1,5 @@
-import java.util.ArrayList;
-
+package util;
 public class Menu {
-    ClassesManage classesManage;
-
 
     public void getFunctionHome() {
         System.out.println("Menu: Quản lý trung tâm giáo dục");
@@ -15,8 +12,9 @@ public class Menu {
         System.out.println("1: Danh sách class");
         System.out.println("2: Thêm class mới");
         System.out.println("3: Sửa class");
-        System.out.println("8: Home");
+        System.out.println("4: Xóa class");
         System.out.println("9: Thoát");
+        System.out.println("0: Home");
     }
     public void getFuncitionStudent() {
         System.out.println("Menu: Quản lý Student");
@@ -28,8 +26,7 @@ public class Menu {
         System.out.println("6: Sắp xếp Sinh Viên theo điểm tăng dần");
         System.out.println("7: Sắp xếp Sinh Viên theo tuổi giảm dần");
         System.out.println("8: Tìm kiếm theo gợi ý");
-
-        System.out.println("9: Home");
-        System.out.println("10: Thoát");
+        System.out.println("9: Thoát");
+        System.out.println("0: Home");
     }
 }

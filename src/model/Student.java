@@ -1,22 +1,15 @@
+package model;
 public class Student{
     private int id;
+    private String code;
     private String name;
     private int age;
     private int gender;
     private float avgPoint;
-
     private Classes classes;
+    private int status;
 
     public Student() {}
-
-    public Student(int id, String name, int age, int gender, float avgPoint, Classes classes) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-        this.avgPoint = avgPoint;
-        this.classes = classes;
-    }
 
     public int getId() {
         return id;
@@ -66,7 +59,18 @@ public class Student{
         this.classes = classes;
     }
 
-    public void display() {
-        System.out.println(id + "\t\t\t" + name + "\t\t\t" + age + "\t\t" + (gender == 1 ? "Nam" : "Nữ") + "\t\t\t\t" + avgPoint + "\t\t" + classes.getId());
+    public String getCode() {
+        return code;
+    }
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 }
